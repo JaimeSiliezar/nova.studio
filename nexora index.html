@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nexora, concepto de producto tecnológico digital.">
+<title>Nexora — Construye lo siguiente</title>
+<style>
+:root{--bg:#070b16;--panel:#10182a;--blue:#6f9cff;--cyan:#83e4ed;--white:#f4f7ff;--muted:#9ca9c2;--line:#26334b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
+header{min-height:82px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.06em}.brand span{color:var(--blue)}
+nav{display:flex;gap:25px;color:var(--muted);font-size:12px}nav a:hover{color:var(--white)}
+.pill{border:1px solid #41557a;border-radius:30px;padding:10px 16px;color:var(--white)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:5vw;align-items:center;padding:100px 0 95px;min-height:610px}
+.badge{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);border-radius:30px;color:var(--muted);font-size:11px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.075em;margin:25px 0}
+h1 span{background:linear-gradient(100deg,var(--blue),var(--cyan));color:transparent;background-clip:text}
+.lead{font-size:15px;line-height:1.85;color:var(--muted);max-width:470px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:14px 18px;border-radius:8px;background:var(--blue);color:#07101f;font-size:12px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.secondary{background:transparent;border:1px solid var(--line);color:var(--white)}
+.visual{min-height:390px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 50% 40%,#1e3b65 0,#101a2d 45%,#0b1120 78%)}
+.ring{position:absolute;width:70%;aspect-ratio:1;border:1px solid #6f9cff66;border-radius:50%;box-shadow:0 0 70px #457cff1a}
+.ring.r2{width:48%;border-color:#83e4ed77}
+.core{width:110px;height:110px;display:grid;place-items:center;border-radius:28px;background:linear-gradient(135deg,#759dff,#8ce8ed);color:#07101f;font-size:38px;font-weight:900;transform:rotate(-9deg);box-shadow:0 0 80px #659bff55;z-index:2}
+.float{position:absolute;padding:13px 15px;border:1px solid #314464;border-radius:12px;background:#111b2d;color:#dbe7ff;font-size:11px}
+.float strong{display:block;font-size:17px;margin-bottom:3px}.f1{top:15%;left:7%}.f2{right:6%;top:28%}.f3{bottom:13%;left:16%}
+.section{padding:78px 0;border-top:1px solid var(--line)}
+.section-head{text-align:center;max-width:660px;margin:0 auto 40px}
+.eyebrow{text-transform:uppercase;letter-spacing:.19em;color:var(--blue);font-size:10px}
+h2{font-size:clamp(32px,5vw,55px);letter-spacing:-.06em;margin:14px 0}
+.section-head p{color:var(--muted);font-size:14px;line-height:1.8}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.feature{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px}
+.icon{width:42px;height:42px;display:grid;place-items:center;background:#1d3151;color:var(--cyan);border-radius:12px;font-size:18px}
+.feature h3{font-size:17px;margin:22px 0 10px}
+.feature p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
+.stat{padding:23px;border:1px solid var(--line);border-radius:12px;background:#0c1322}
+.stat strong{font-size:27px;display:block}.stat span{font-size:11px;color:var(--muted)}
+.cta{padding:52px;border:1px solid #2c466e;border-radius:20px;background:linear-gradient(115deg,#142849,#0e1728);display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta h2{margin:10px 0}.cta p{color:var(--muted);font-size:13px;line-height:1.7}
+footer{display:flex;justify-content:space-between;padding:25px 0;color:var(--muted);font-size:11px;border-top:1px solid var(--line)}
+@media(max-width:760px){header{padding:20px 0;align-items:flex-start;gap:15px}nav{gap:10px;flex-wrap:wrap;justify-content:flex-end;font-size:10px}.hero{grid-template-columns:1fr;padding:65px 0;gap:35px}.visual{min-height:320px}.features,.stats{grid-template-columns:1fr}.cta{padding:28px;display:block}.cta .btn{margin-top:12px}footer{flex-direction:column;gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="#">nexora<span>.</span></a>
+<nav aria-label="Navegación principal"><a href="#producto">Producto</a><a href="#ventajas">Ventajas</a><a href="#contacto" class="pill">Contactar ↗</a></nav>
+</header>
+<main>
+<section class="wrap hero" id="producto">
+<div><div class="badge"><span class="dot"></span> Una nueva forma de trabajar · Concepto</div>
+<h1>Ideas rápidas.<br><span>Impacto real.</span></h1>
+<p class="lead">Una plataforma conceptual para equipos que quieren convertir ideas complejas en procesos claros. Menos fricción, más foco y mejores decisiones.</p>
+<div class="actions"><a class="btn" href="#ventajas">Explorar plataforma ↗</a><a class="btn secondary" href="#contacto">Hablar con el equipo</a></div></div>
+<div class="visual" role="img" aria-label="Ilustración abstracta de una interfaz tecnológica">
+<div class="ring"></div><div class="ring r2"></div><div class="core">N</div>
+<div class="float f1"><strong>+32%</strong> Flujo de trabajo</div>
+<div class="float f2"><strong>Enfoque</strong> Todo en un espacio</div>
+<div class="float f3">● Sistema conectado</div>
+</div>
+</section>
+<section class="wrap section" id="ventajas">
+<div class="section-head"><div class="eyebrow">Pensado para avanzar</div><h2>Complejidad fuera.<br>Claridad dentro.</h2>
+<p>Nexora es una marca tecnológica ficticia creada para demostrar cómo una plantilla puede adaptarse a un producto digital.</p></div>
+<div class="features">
+<article class="feature"><div class="icon">↗</div><h3>Flujos más simples</h3><p>Organiza los pasos importantes y dedica menos tiempo a tareas repetitivas.</p></article>
+<article class="feature"><div class="icon">◎</div><h3>Todo conectado</h3><p>Una experiencia coherente para que la información esté donde el equipo la necesita.</p></article>
+<article class="feature"><div class="icon">⌁</div><h3>Crece contigo</h3><p>Una estructura flexible que puede evolucionar junto a nuevas necesidades.</p></article>
+</div>
+<div class="stats"><div class="stat"><strong>01</strong><span>Una visión compartida</span></div><div class="stat"><strong>02</strong><span>Menos pasos innecesarios</span></div><div class="stat"><strong>03</strong><span>Más espacio para crear</span></div></div>
+</section>
+<section class="wrap section" id="contacto">
+<div class="cta"><div><div class="eyebrow">Tu siguiente paso</div><h2>Construye lo siguiente.</h2><p>Personaliza esta llamada a la acción con los datos reales de tu negocio.</p></div><a class="btn" href="mailto:hola@ejemplo.com">Contactar ↗</a></div>
+</section>
+</main>
+<footer class="wrap"><span>NEXORA — PROYECTO CONCEPTUAL</span><span>Demostración de diseño · Nova Studio</span></footer>
+</body>
+</html>

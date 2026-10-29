@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aureum, concepto de marca de lujo contemporáneo.">
+<title>Aureum — El arte de permanecer</title>
+<style>
+:root{--ink:#171713;--paper:#f4f0e7;--gold:#b79a5b;--muted:#77756d;--line:#d8d1c4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,90%);margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:25px 0;border-bottom:1px solid var(--line)}
+.brand{font-size:22px;letter-spacing:.24em}nav{display:flex;gap:26px;font:11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+nav a:hover{color:var(--gold)}
+.hero{min-height:78vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;padding:70px 0}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(54px,8vw,108px);font-weight:400;line-height:.91;letter-spacing:-.06em;margin:25px 0}
+h1 em{color:var(--gold);font-weight:400}.intro{max-width:410px;color:var(--muted);font:15px/1.9 Arial,sans-serif}
+.btn{display:inline-block;margin-top:28px;padding:15px 22px;background:var(--ink);color:var(--paper);font:11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;transition:.25s}
+.btn:hover{background:var(--gold);color:var(--ink);transform:translateY(-2px)}
+.still-life{min-height:490px;position:relative;overflow:hidden;background:#d8cbb2;display:grid;place-items:center}
+.sun{position:absolute;width:64%;aspect-ratio:1;border-radius:50%;background:#b7a17b;top:12%;right:8%;opacity:.7}
+.bottle{position:relative;width:31%;height:54%;background:linear-gradient(90deg,#292b25,#555342 48%,#252720);border-radius:16px 16px 28px 28px;box-shadow:24px 25px 45px #52442c55;transform:rotate(-5deg)}
+.bottle:before{content:"";position:absolute;left:33%;top:-13%;width:34%;height:16%;background:var(--gold);border-radius:4px 4px 0 0}
+.bottle:after{content:"AUREUM";position:absolute;top:48%;left:0;right:0;text-align:center;color:#d7bd83;letter-spacing:.22em;font-size:clamp(8px,1.2vw,13px)}
+.shadow{position:absolute;width:75%;height:12%;bottom:9%;background:#78634655;filter:blur(20px);border-radius:50%}
+.section{padding:85px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}
+h2{font-weight:400;font-size:clamp(32px,4vw,55px);margin:10px 0}
+.section-head p{max-width:350px;color:var(--muted);font:14px/1.8 Arial,sans-serif}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tile{padding:28px;min-height:190px;border:1px solid var(--line)}
+.tile span{color:var(--gold);font:11px Arial,sans-serif;letter-spacing:.15em}
+.tile h3{font-size:25px;font-weight:400;margin:38px 0 10px}
+.tile p{color:var(--muted);font:13px/1.7 Arial,sans-serif}
+.quote{background:#e7dfd0;padding:65px 8%;text-align:center;font-size:clamp(25px,3.5vw,43px);line-height:1.3}
+.quote small{display:block;margin-top:22px;color:var(--muted);font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+footer{padding:26px 0;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font:11px Arial,sans-serif;letter-spacing:.08em}
+@media(max-width:760px){header{gap:15px}nav{gap:10px;font-size:9px}.hero{grid-template-columns:1fr;padding:55px 0}.still-life{min-height:360px}.section-head{display:block}.grid{grid-template-columns:1fr}.tile{min-height:150px}.tile h3{margin-top:25px}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="#">AUREUM</a>
+<nav aria-label="Navegación principal"><a href="#story">Historia</a><a href="#craft">Esencia</a><a href="#contact">Contacto</a></nav>
+</header>
+<main>
+<section class="wrap hero">
+<div>
+<div class="eyebrow">Un estudio de lujo contemporáneo</div>
+<h1>El arte de<br><em>permanecer.</em></h1>
+<p class="intro">Objetos, aromas y rituales creados para quienes encuentran belleza en los detalles y valor en lo que perdura.</p>
+<a class="btn" href="#story">Descubrir Aureum ↗</a>
+</div>
+<div class="still-life" role="img" aria-label="Ilustración de un frasco de perfume">
+<div class="sun"></div><div class="shadow"></div><div class="bottle"></div>
+</div>
+</section>
+<section id="story" class="wrap section">
+<div class="section-head">
+<div><div class="eyebrow">01 / Nuestra filosofía</div><h2>Menos ruido.<br>Más significado.</h2></div>
+<p>Aureum es un concepto de marca que celebra la artesanía, los materiales honestos y una elegancia que no necesita llamar la atención.</p>
+</div>
+<div class="quote">“La verdadera distinción está en aquello que no necesita demostrarse.”<small>Manifiesto Aureum · Texto conceptual</small></div>
+</section>
+<section id="craft" class="wrap section">
+<div class="section-head">
+<div><div class="eyebrow">02 / La esencia</div><h2>Diseñado para durar.</h2></div>
+<p>Una identidad sobria, cálida y editorial para productos que cuentan una historia.</p>
+</div>
+<div class="grid">
+<article class="tile"><span>01 — MATERIALES</span><h3>Materia honesta</h3><p>Texturas naturales, tonos minerales y detalles cuidadosamente elegidos.</p></article>
+<article class="tile"><span>02 — PROCESO</span><h3>Hecho con intención</h3><p>Cada decisión visual tiene un propósito: claridad, calma y coherencia.</p></article>
+<article class="tile"><span>03 — LEGADO</span><h3>Elegancia duradera</h3><p>Una estética atemporal que evita las tendencias pasajeras.</p></article>
+</div>
+</section>
+<section id="contact" class="wrap section">
+<div class="eyebrow">03 / Hablemos</div><h2>Un comienzo extraordinario.</h2>
+<p class="intro">Este sitio es un concepto de demostración. Personaliza los datos de contacto antes de publicarlo.</p>
+<a class="btn" href="mailto:hola@ejemplo.com">Escribir al estudio ↗</a>
+</section>
+</main>
+<footer class="wrap"><span>AUREUM — PROYECTO CONCEPTUAL</span><span>Demostración de diseño · Nova Studio</span></footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Forma, concepto de estudio de arquitectura contemporánea.">
+<title>Forma — Espacios con intención</title>
+<style>
+:root{--bg:#eeece5;--ink:#222721;--olive:#777e66;--muted:#777970;--line:#d1d0c7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.brand{font-size:23px;font-weight:700;letter-spacing:-.08em}.brand i{color:var(--olive);font-style:normal}
+nav{display:flex;gap:26px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}nav a:hover{color:var(--olive)}
+.hero{padding:78px 0 65px;display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:10px;color:var(--olive)}
+h1{font-size:clamp(52px,8vw,100px);letter-spacing:-.09em;line-height:.88;margin:23px 0;font-weight:500}
+h1 span{color:var(--olive)}.lead{max-width:380px;line-height:1.8;color:var(--muted);font-size:14px}
+.link{display:inline-block;margin-top:24px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-size:12px}
+.architecture{height:480px;background:#d6d3c8;position:relative;overflow:hidden}
+.block{position:absolute;background:#f0eee7}
+.block.a{width:52%;height:72%;left:11%;bottom:0;clip-path:polygon(0 18%,100% 0,100% 100%,0 100%)}
+.block.b{width:28%;height:88%;right:10%;bottom:0;background:#a7ab99;clip-path:polygon(0 0,100% 14%,100% 100%,0 100%)}
+.block.c{width:22%;height:44%;left:26%;bottom:0;background:#777e66}
+.window{position:absolute;z-index:2;left:37%;top:36%;width:14%;height:24%;border:7px solid #b7b8ab}
+.floor{position:absolute;bottom:0;left:0;right:0;height:8%;background:#b8b4a7}
+.projects{padding:70px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}
+h2{font-size:clamp(35px,5vw,60px);letter-spacing:-.07em;font-weight:500;margin:13px 0}
+.section-head p{max-width:340px;color:var(--muted);font-size:13px;line-height:1.8}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card-art{height:230px;position:relative;overflow:hidden;background:#d9d5c9}
+.card-art.one:before{content:"";position:absolute;inset:20% 15% 0;background:#a7ab99;clip-path:polygon(0 15%,100% 0,100% 100%,0 100%)}
+.card-art.one:after{content:"";position:absolute;left:35%;top:38%;width:25%;height:40%;background:#eeeae0;border:7px solid #777e66}
+.card-art.two{background:#d9c8b8}
+.card-art.two:before{content:"";position:absolute;left:18%;right:18%;bottom:0;height:75%;background:#f0e8db;clip-path:polygon(0 0,100% 18%,100% 100%,0 100%)}
+.card-art.two:after{content:"";position:absolute;left:43%;bottom:0;width:20%;height:45%;background:#a98068}
+.card-art.three{background:#c7cbbd}
+.card-art.three:before{content:"";position:absolute;width:60%;height:75%;left:20%;bottom:0;background:#e9e8de;clip-path:polygon(0 22%,50% 0,100% 22%,100% 100%,0 100%)}
+.card-art.three:after{content:"";position:absolute;left:42%;bottom:0;width:17%;height:45%;background:#858d76}
+.card h3{font-size:21px;font-weight:500;margin:17px 0 6px}
+.card p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+.tag{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--olive)}
+.statement{margin:45px 0;background:#dfe0d6;padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.statement blockquote{margin:0;font-size:clamp(24px,3.2vw,38px);line-height:1.2;letter-spacing:-.04em}
+.statement p{font-size:13px;line-height:1.9;color:var(--muted)}
+.contact{padding:65px 0;border-top:1px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:23px 0;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.1em;color:var(--muted)}
+@media(max-width:760px){nav{gap:11px;font-size:9px}.hero{grid-template-columns:1fr;padding:55px 0;gap:35px}.architecture{height:340px}.section-head{display:block}.cards{grid-template-columns:1fr}.card-art{height:260px}.statement{grid-template-columns:1fr;padding:28px}footer{flex-direction:column;gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="#">f<i>/</i>forma</a>
+<nav aria-label="Navegación principal"><a href="#estudio">Estudio</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+</header>
+<main>
+<section class="wrap hero" id="estudio">
+<div><div class="kicker">Arquitectura · Interiorismo</div><h1>Espacios<br>con <span>intención.</span></h1>
+<p class="lead">Diseñamos lugares que conectan la luz, los materiales y la forma de vivir. Arquitectura serena para una vida más consciente.</p>
+<a class="link" href="#proyectos">Explorar proyectos ↗</a></div>
+<div class="architecture" role="img" aria-label="Composición geométrica inspirada en arquitectura contemporánea">
+<div class="block a"></div><div class="block b"></div><div class="block c"></div><div class="window"></div><div class="floor"></div>
+</div>
+</section>
+<section class="wrap projects" id="proyectos">
+<div class="section-head"><div><div class="kicker">Una selección conceptual</div><h2>Proyectos que respiran.</h2></div>
+<p>Estudios de forma, luz y materialidad. Estas piezas son ejemplos ficticios para mostrar posibilidades de diseño.</p></div>
+<div class="cards">
+<article class="card"><div class="card-art one" role="img" aria-label="Ilustración geométrica de una vivienda"></div><div class="tag">Residencial · Concepto</div><h3>Casa Oliva</h3><p>Una vivienda abierta al paisaje y a la luz natural.</p></article>
+<article class="card"><div class="card-art two" role="img" aria-label="Ilustración geométrica de un interior"></div><div class="tag">Interiorismo · Concepto</div><h3>Refugio Lento</h3><p>Un interior cálido basado en texturas naturales.</p></article>
+<article class="card"><div class="card-art three" role="img" aria-label="Ilustración geométrica de un pabellón"></div><div class="tag">Pabellón · Concepto</div><h3>Patio Norte</h3><p>Un espacio de encuentro entre sombra y sol.</p></article>
+</div>
+<div class="statement"><blockquote>“La arquitectura empieza cuando escuchamos el lugar.”</blockquote><p>Forma es un estudio ficticio creado como demostración de una plantilla web. Cambia los textos, datos y proyectos antes de utilizarlo para un negocio real.</p></div>
+</section>
+<section class="wrap contact" id="contacto"><div class="kicker">Hablemos de tu espacio</div><h2>¿Imaginamos algo juntos?</h2><p class="lead">Cuéntanos qué necesitas y dónde te gustaría empezar.</p><a class="link" href="mailto:hola@ejemplo.com">hola@ejemplo.com ↗</a></section>
+</main>
+<footer class="wrap"><span>FORMA — PROYECTO CONCEPTUAL</span><span>Demostración de diseño · Nova Studio</span></footer>
+</body>
+</html>
